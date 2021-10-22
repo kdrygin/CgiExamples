@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace CurrentTime
+namespace GetServerTime
 {
     class Program
     {
@@ -14,3 +14,4 @@ namespace CurrentTime
         }
     }
 }
+

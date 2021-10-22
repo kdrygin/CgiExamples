@@ -1,0 +1,1 @@
+﻿Install Nuget package System.Configuration.ConfigurationManager

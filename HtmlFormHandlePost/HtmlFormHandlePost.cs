@@ -7,6 +7,7 @@ namespace HtmlFormHandlePost
         static void Main(string[] args)
         {
             // get post data length
+            var requestMethod = Environment.GetEnvironmentVariable("REQUEST_METHOD");
             var dataLen = int.Parse(Environment.GetEnvironmentVariable("CONTENT_LENGTH"));
 
             //get post data
@@ -24,7 +25,7 @@ namespace HtmlFormHandlePost
             Console.WriteLine("<html><head><title> Current Time</title></head>");
             Console.WriteLine("<body>");
 
-            Console.WriteLine($"<p>{dataLen}</p>");
+            Console.WriteLine($"<p>{requestMethod}, Data Length:{dataLen}</p>");
 
             foreach (var field in fields)
             {
